@@ -44,4 +44,4 @@ The dataset itself is not stored in this repository because of its size.
 
 See:
 
-`requirements_galaxy10_py39.txt`
+`requirements_galaxy10.txt`
