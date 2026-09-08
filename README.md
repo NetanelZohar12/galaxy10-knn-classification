@@ -1,13 +1,47 @@
-# Galaxy10 DECaLS Binary Classification — FINAL READY
+# Galaxy10 DECaLS Binary Classification with KNN
 
-Cleanup applied to the fully executed final notebook:
+Machine Learning assignment for binary galaxy morphology classification.
 
-- Grid Search display is configured to show all 720 rows.
-- Part 3 documentation matches the final hyperparameter search.
-- Course-taught color/channel histograms are correctly classified as course material.
-- Assignment Requirement Audit and Presentation Checklist match the final results.
-- The Final Results Dashboard is now pure Markdown.
-- The collapsed `distance_name = ...` code strip has been removed completely.
-- All image galleries, plots, Bonus 6A/6B/6C analyses, and existing execution outputs are preserved.
+## Task
 
-Note: the currently embedded Grid Search output was generated before the display limit changed. On the next final rerun, the complete 720-row DataFrame will be visibly rendered.
+Classify galaxy images into:
+
+- Round Smooth Galaxy
+- Barred Spiral Galaxy
+
+## Model
+
+K-Nearest Neighbors (KNN)
+
+Final configuration:
+
+- Feature Engineering: HOG + color histograms + morphology statistics
+- Scaler: RobustScaler
+- k: 10
+- Voting: distance weighted
+- Distance: Cosine
+
+## Final Results
+
+- 5-Fold CV Macro-F1: 0.9049
+- Validation Macro-F1: 0.8966
+- Test Macro-F1: 0.8903
+
+## Main Notebook
+
+`galaxy10_decals_knn_assignment_FINAL_EN_READY.ipynb`
+
+The notebook is saved with all execution outputs and visualizations.
+
+## Dataset
+
+Galaxy10 DECaLS Binary Classification Dataset  
+Kaggle: [insert dataset link]
+
+The dataset itself is not stored in this repository because of its size.
+
+## Environment
+
+See:
+
+`requirements_galaxy10_py39.txt`
