@@ -29,7 +29,7 @@ Final configuration:
 
 ## Main Notebook
 
-`galaxy10_decals_knn_assignment_FINAL_EN_READY.ipynb`
+`galaxy10_decals_knn_assignment.ipynb`
 
 The notebook is saved with all execution outputs and visualizations.
 
